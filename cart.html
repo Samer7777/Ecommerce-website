@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!---nav bar--->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  fixed-top">
+        <div class="container">
+            <img src="./img/small-logo2.png" alt="logo1">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span ><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fal fa-search"></i>
+                    <i onclick="window.location.href='./cart.html'" class="fal fa-shopping-bag active"></i>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!---HOME SECTION--->
+    <section id="blog-home" class="pt-5 mt-5 container" >  
+            <h2 class="font-weight-bold pt-5">Shopping Cart</h2>
+            <hr>
+    </section>
+
+    <!---cart table SECTION--->
+    <section id="cart-container" class="container my-5">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                    <td><img src="./img/shoes/1.jpg" alt=""></td>
+                    <td><h5>Shoes</h5></td>
+                    <td><h5>$20.00</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>$20.00</h5></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                    <td><img src="./img/shoes/3.jpg" alt=""></td>
+                    <td><h5>Sport Boots</h5></td>
+                    <td><h5>$15.00</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>$15.00</h5></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                    <td><img src="./img/shoes/2.jpg" alt=""></td>
+                    <td><h5>Shoes</h5></td>
+                    <td><h5>$22.00</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>$22.00</h5></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!---cart table SECTION--->
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="cupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>CUPPON</h5>
+                    <p>Enter your coupon code if you have one.</p>
+                    <input type="text" placeholder="Coupon Code">
+                    <button>APPLAY COUPON</button>
+                </div>
+            </div>
+            <div class="total col-lg-6 col-md-6 col-12">
+                <div>
+                    <h5>CART TOTAL</h5>
+                    <div class="d-flex justify-content-between">
+                        <h6>Subtotals</h6>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Shipping</h6>
+                        <p>$50.00</p>
+                    </div>
+                    <hr class="second-hr">
+                    <div class="d-flex justify-content-between">
+                        <h6>Total</h6>
+                        <p>$50.00</p>
+                    </div>
+                    <button class="ml-auto">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+        <!---footer SECTION--->
+        <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <img src="./img/light-logo.png" alt="">
+                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi error ullam suscipit qui iusto quod.</p>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                    <h5 class="pb-2">Featureed</h5>
+                    <ul class="text-uppercase list-unstyled">
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Womens</a></li>
+                        <li><a href="#">Boys</a></li>
+                        <li><a href="#">Girls</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Clothes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                    <h5 class="pb-2">Contact US</h5>
+                    <div>
+                        <h6 class="text-uppercase">Address</h6>
+                        <p>123 STREET NAME , CITY , US</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">PHONE</h6>
+                        <p>(123) 98983-0990</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p>Mail@Example.com</p>
+                    </div>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Instgram</h5>
+                    <div class="row">
+                        <img class="img-fluid w-25 h-100 m-2" src="./img/insta/1.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="./img/insta/2.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="./img/insta/3.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="./img/insta/4.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="./img/insta/5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-5">
+                <div class="row container mx-auto text-center">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <img src="./img/payment.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12  text-center mb-2">
+                        <p>Developed By <span>SAMER-MAJID</span> © 2021. ALL Right Reseved</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <a href="https://www.facebook.com/profile.php?id=100002713959339"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/Samer7777"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/samer-majid-554917138"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</body>
+</html>
